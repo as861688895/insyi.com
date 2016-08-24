@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>下拉列表</title>
+    <link href="LOL.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul id="b">
+    <li id="list">
+        <a href="#" id="a">三兄弟</a>
+        <ul id="list1">
+            <li>蛮</li>
+            <li>易</li>
+            <li>信</li>
+        </ul>
+    </li>
+</ul>
+<script>
+
+document.getElementById('list').onmouseover = on;
+document.getElementById('list').onmouseout = miss;
+    function on(){
+        document.getElementById('list1').style.display = 'block';
+        document.getElementById('a').style.background = '#ff7200';
+    }
+    function miss(){
+        document.getElementById('list1').style.display = 'none';
+        document.getElementById('a').style.background = 'blue';
+    }
+</script>
+</body>
+</html>
